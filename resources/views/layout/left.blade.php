@@ -15,7 +15,7 @@
 
 
             <li class="has_sub">
-                <a href={{route('couriers.search')}} class="waves-effect"><span class="badge badge-pill badge-primary float-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Szukaj przesyłki </span> </a>
+                <a href={{route('shipments.search')}} class="waves-effect"><span class="badge badge-pill badge-primary float-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Szukaj przesyłki </span> </a>
             </li>
             <li class="has_sub">
                 <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span> Status</span> <span class="menu-arrow"></span></a>

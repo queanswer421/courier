@@ -27,5 +27,7 @@ Route::post('couriers', 'CourierController@store')->name('couriers.store');
 //#############################################
 Route::get('shipments', 'ShipmentController@index')->name('shipments.index');
 Route::get('shipments/create', 'ShipmentController@create')->name('shipments.create');
+Route::get('shipments/search', 'ShipmentController@search')->name('shipments.search');
+Route::get('shipments/results', 'ShipmentController@results')->name('shipments.results');
 Route::post('shipments', 'ShipmentController@store')->name('shipments.store');
 Route::get('shipments/{que}', 'ShipmentController@show')->name('shipments.show');

@@ -34,4 +34,14 @@ class ShipmentController extends Controller
         // dd($courier);
         return view('shipments.show', compact('shipment'));
     }
+    public function search()
+    {
+        return view('shipments.search');
+    }
+    public function results(Request $request)
+    {
+        $id = $request->id;
+        $shipment = Shipment::find($id); 
+        return view('shipments.show', compact('shipment'));
+    }
 }

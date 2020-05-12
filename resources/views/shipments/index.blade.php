@@ -21,8 +21,8 @@
                                 </thead>
                                 @foreach ($shipments as $shipment)
                                 <tr> 
-                                    <td>lp</td>   
-                                    <td>11111111</td>
+                                    <td>{{$shipment->id}}</td>   
+                                    <td>{{$shipment->pid}}</td>
                                     <td>{{$shipment->senderCity}}</td>
                                     <td>{{$shipment->receiverCity}}</td>
                                     <td>{{$shipment->created_at}}</td>
