@@ -22,7 +22,7 @@
                                             @csrf                                
                                             <fieldset class="form-group">
                                                 <label for="trackNo">Track No</label>
-                                                <input type="text" class="form-control" id="id" name="id" required="true">
+                                                <input type="text" class="form-control" id="pid" name="pid" required="true">
                                             </fieldset>   
                                             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                                 <button type="submit" class="btn btn-primary">Szukaj</button>

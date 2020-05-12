@@ -18,8 +18,8 @@
 </div>
 
 
-<p><strong>Reference Number:</strong> RefNumber</p>
-<p><strong>Courier Date :</strong>'CourierDate'</p>
+<p><strong>Numer przesyłki:</strong> {{$shipment->pid}}</p>
+<p><strong>Przesyłka nadana :</strong>{{$shipment->created_at}}</p>
 
 <div class="row">
     <div class="col-12">
@@ -64,71 +64,86 @@
     </div><!-- end col -->
 </div>
 <!-- end row -->
+<hr>
+<div class="row">
+    <div class="col-12">
+            <p style="font-size:16px; color:red" align="center"> </p>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card-box">
+                <h4 class="header-title m-t-0 m-b-30">Historia</h4>
+                <table class="table">
+                    <tr>
+                        <th>Data</th>
+                        <th>Godzina</th>
+                        <th>Opis</th>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                    <tr>
+                        <td>Ulica:</td>
+                        <td>{{$shipment->senderCity}}</td>
+                        <td>hahaha</td>
+                    </tr>
+                </table> 
+                </div>  
+            </div><!-- end col -->
+            <div class="col-xl-6">
+                <div class="card-box">
+                <h4 class="header-title m-t-0 m-b-30">Parametry przesyłki</h4>
+                <table class="table">
+                    <tr>
+                        <th>Miasto:</th>
+                        <td>{{$shipment->senderCity}}</td>
+                    </tr>
+                    <tr>
+                        <th>Ulica:</th>
+                        <td>{{$shipment->senderStreet}}</td>
+                    </tr>
+                    <tr>
+                        <th>Miasto:</th>
+                        <td>{{$shipment->receiverCity}}</td>
+                    </tr>
+                    <tr>
+                        <th>Ulica:</th>
+                        <td>{{$shipment->receiverStreet}}</td>
+                    </tr>
+                </table> 
+                </div>  
+            </div><!-- end col -->
+        </div><!-- end row -->   
+    </div><!-- end col -->
+</div>
 
 
-
-
-
-
-
-<table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-<tr>
-<th>Courier Description</th>
-<td>'CourierDes</td>
-</tr>
-<tr>
-<th>Parcel Weight</th>
-<td>'ParcelWeight</td>
-</tr>
-<tr>
-<th>Parcel Dimension Length</th>
-<td>ParcelDimensionlen</td>
-</tr>
-<tr>
-<th>Parcel Dimension Width</th>
-<td>ParcelDimensionwidth</td>
-</tr>
-<tr>
-<th>Parcel Dimension Height</th>
-<td>ParcelDimensionheight</td>
-</tr>
-<tr>
-<th>Parcel Price</th>
-<td>ParcelPrice</td>
-</tr>
-
-
-
-
-<tr>
-<th>Status</th>
-<td></td>
-</tr>
-
-</tr>
-</table>
-
-
-
-<table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-<tr align="center">
-<th colspan="4" >Courier History</th> 
-</tr>
-<tr>
-<th>#</th>
-<th>Remark</th>
-<th>Status</th>
-<th>Time</th>
-</tr>
-
-<tr>
-<td></td>
-<td>remark</td> 
-<td>corstatus</td> 
-<td>StatusDate</td> 
-</tr>
-
-</table>
 
 <p align="center">                            
 <button class="btn btn-primary waves-effect waves-light w-lg" data-toggle="modal" data-target="#myModal">Take Action</button></p>  

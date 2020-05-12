@@ -40,8 +40,10 @@ class ShipmentController extends Controller
     }
     public function results(Request $request)
     {
-        $id = $request->id;
-        $shipment = Shipment::find($id); 
+        $pid = $request->pid;
+        
+        $shipment = Shipment::where('pid', $pid)->first(); 
+        // dd($shipment);
         return view('shipments.show', compact('shipment'));
     }
 }
