@@ -5,12 +5,12 @@
     <div id="sidebar-menu">
         <ul>
             <li class="has_sub">
-                <a href={{route('couriers.index')}} class="waves-effect"><span class="badge badge-pill badge-primary float-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Moje przesyłki </span> </a>
+                <a href={{route('shipments.index')}} class="waves-effect"><span class="badge badge-pill badge-primary float-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Moje przesyłki </span> </a>
             </li>
 
             
             <li class="has_sub">
-                <a href={{route('couriers.create')}} class="waves-effect"><span class="badge badge-pill badge-primary float-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Dodaj przesyłke </span> </a>
+                <a href={{route('shipments.create')}} class="waves-effect"><span class="badge badge-pill badge-primary float-right"></span><i class="zmdi zmdi-view-dashboard"></i><span> Dodaj przesyłke </span> </a>
             </li>
 
 
