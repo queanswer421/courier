@@ -18,11 +18,12 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="card-box">
+
                             <form action="{{ route('shipments.store') }}" method="POST">
                             <p style="font-size:16px; color:red" align="center"> </p>
                             <div class="row">
                                 <div class="col-xl-6">
+                                    <div class="card-box">
                                     <h4 class="header-title m-t-0 m-b-30">Nadawca</h4>
                                       
                                         @csrf                                
@@ -33,10 +34,12 @@
                                         <fieldset class="form-group">
                                             <label for="senderStreet">Ulica</label>
                                             <input class="form-control" type="text" name="senderStreet" required="true">
-                                        </fieldset>    
+                                        </fieldset>  
+                                    </div>  
                                 </div><!-- end col -->
 
                                 <div class="col-xl-6 m-t-sm-40">
+                                    <div class="card-box">
                                         <h4 class="header-title m-t-0 m-b-30">Odbiorca</h4>
                                     
                                         <fieldset class="form-group">
@@ -46,7 +49,8 @@
                                         <fieldset class="form-group">
                                             <label for="receiverStreet">Ulica</label>
                                             <input class="form-control" type="text" name="receiverStreet" required="true">
-                                        </fieldset>    
+                                        </fieldset> 
+                                    </div>   
                                 </div><!-- end col -->
 
                             </div><!-- end row -->
@@ -57,7 +61,7 @@
                                 </div>
                             </div>
                             </form>
-                        </div>
+
                     </div><!-- end col -->
                 </div>
                 <!-- end row -->

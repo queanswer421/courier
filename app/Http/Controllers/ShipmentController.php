@@ -29,8 +29,9 @@ class ShipmentController extends Controller
     }
     public function show($id)
     {
+        $shipment = Shipment::find($id); 
         //$shipment = $this->cR->getCourier($id);
         // dd($courier);
-        return view('shipments.show', compact('id'));
+        return view('shipments.show', compact('shipment'));
     }
 }

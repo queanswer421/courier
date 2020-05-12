@@ -20,85 +20,57 @@
 
 <p><strong>Reference Number:</strong> RefNumber</p>
 <p><strong>Courier Date :</strong>'CourierDate'</p>
-<div class="row">                                    
-<div class="col-6">
 
+<div class="row">
+    <div class="col-12">
+        
+            <p style="font-size:16px; color:red" align="center"> </p>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card-box">
+                    <h4 class="header-title m-t-0 m-b-30">Nadawca</h4>
+                    <table class="table">
+                        <tr>
+                          <th>Miasto:</th>
+                          <td>{{$shipment->senderCity}}</td>
+                        </tr>
+                        <tr>
+                          <th>Ulica:</th>
+                          <td>{{$shipment->senderStreet}}</td>
+                        </tr>
+                    </table> 
+                    </div>  
+                </div><!-- end col -->
 
-  <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">    
-  <tr>
-    <th style="text-align: center" colspan="2">Sender Details</th>
-  </tr>    
+                <div class="col-xl-6 m-t-sm-40">
+                    <div class="card-box">
+                        <h4 class="header-title m-t-0 m-b-30">Odbiorca</h4>
+                    
+                        <table class="table">
+                            <tr>
+                              <th>Miasto:</th>
+                              <td>{{$shipment->receiverCity}}</td>
+                            </tr>
+                            <tr>
+                              <th>Ulica:</th>
+                              <td>{{$shipment->receiverStreet}}</td>
+                            </tr>
+                        </table>  
+                    </div>
+                </div><!-- end col -->
 
-<tr>
-<th>Sender Branch</th>
-<td>SenderBranch</td>
-</tr>
-<tr>
-<th>Sender Name</th>
-<td>SenderName</td>
-</tr>
-<tr>
-<th>Sender Contact Number</th>
-<td>SenderContactnumber</td>
-</tr>
-<tr>
-<th>Sender Address</th>
-<td>SenderAddress</td>
-</tr>
-<tr>
-<th>Sender City</th>
-<td>SenderCity</td>
-</tr>
-<tr>
-<th>Sender State</th>
-<td>SenderState</td>
-</tr>
-<tr>
-<th>Sender Pincode</th>
-<td>SenderPincode</td>
-</tr>
-<tr>
-<th>Sender Country</th>
-<td>'SenderCountry</td>
-</tr>
-</table>
+            </div><!-- end row -->
+        
+    </div><!-- end col -->
 </div>
-<div class="col-6">
-<table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-   <tr>
-    <th style="text-align: center" colspan="2">Recipient Details</th>
-  </tr>  
+<!-- end row -->
 
-<tr>
-<th>Recipient Name</th>
-<td>RecipientName</td>
-</tr>
-<tr>
-<th>Recipient Contact Number</th>
-<td>RecipientContactnumber</td>
-</tr>
-<tr>
-<th>Recipient Address</th>
-<td>RecipientAddress</td>
-</tr>
-<tr>
-<th>Recipient City</th>
-<td>RecipientCity</td>
-</tr>
-<tr>
-<th>Recipient State</th>
-<td>RecipientState</td>
-</tr>
-<tr>
-<th>Recipient Pincode</th>
-<td>RecipientPincode</td>
-</tr>
-<tr>
-<th>Recipient Country</th>
-<td>RecipientCountry</td>
-</tr>
-</table>
-</div></div>
+
+
+
+
+
+
 <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
 <tr>
 <th>Courier Description</th>
