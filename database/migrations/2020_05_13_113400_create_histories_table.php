@@ -15,6 +15,8 @@ class CreateHistoriesTable extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('shipment_id')->unsigned();
+            $table->foreign('shipment_id')->references('id')->on('shipments');
             $table->integer('pid');
             $table->dateTime('h1');
             $table->dateTime('h2');

@@ -73,43 +73,43 @@
                 <div class="card-box">
                 <h4 class="header-title m-t-0 m-b-30">Historia</h4>
                 <table class="table">
-                    <tr>
-                        <th>Data</th>
-                        <th>Godzina</th>
+                    <thead>
                         <th>Opis</th>
-                    </tr>
+                        <th>Godzina</th>
+                        <th>Data</th>
+                    </thead>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Powiadomienie SMS.</td>
                         <td>{{$shipment->senderCity}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Powiadomienie mail.</td>
                         <td>{{$shipment->senderCity}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Wydanie przesyłki do doręczenia.</td>
                         <td>{{$shipment->senderCity}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Przyjęcie przesyłki w oddziale.</td>
                         <td>{{$shipment->senderCity}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Przyjęcie przesyłki w oddziale.</td>
                         <td>{{$shipment->senderCity}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Przesyłka odebrana przez Kuriera.</td>
                         <td>{{$shipment->senderCity}}</td>
-                        <td>hahaha</td>
+                        <td>aa</td>
                     </tr>
                     <tr>
-                        <td>Ulica:</td>
+                        <td>Zarejestrowano dane przesyłki, przesyłka jeszcze nienadana.</td>
                         <td>{{$shipment->senderCity}}</td>
                         <td>hahaha</td>
                     </tr>

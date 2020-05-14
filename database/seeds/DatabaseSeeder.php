@@ -14,7 +14,15 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         // $this->call(CourierTableSeeder::class);
         // $this->call(RolesTableSeeder::class);
-        $this->call(ShipmentsTableSeeder::class);
-        $this->call(HistoryTableSeeder::class);
+        // $this->call(ShipmentsTableSeeder::class);
+        // $this->call(HistoryTableSeeder::class);
+
+        // Create 10 records of customers
+        factory(App\Shipment::class, 10)->create()->each(function ($shipment) {
+            // Seed the relation with one address
+            $history = factory(App\History::class)->make();
+            $shipment->history()->save($history);
+
+        });
     }
 }

@@ -9,6 +9,7 @@ use Carbon\Carbon;
 $factory->define(History::class, function (Faker $faker) {
     $startDate = Carbon::createFromTimeStamp($faker->dateTimeBetween('-30 days', '+30 days')->getTimestamp());
     $endDate = Carbon::createFromFormat('Y-m-d H:i:s', $startDate)->addHour($faker->numberBetween( 1, 8 ))->addMinutes(0);
+    
     return [
         'pid'=> $faker->ean8,
         'h1'=> $startDate,

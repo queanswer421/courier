@@ -11,6 +11,6 @@ class HistoryTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\History::class, 20)->create();
+        // factory(App\History::class, 20)->create();
     }
 }
