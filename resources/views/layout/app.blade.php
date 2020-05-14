@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"> 
         <!-- Modernizr js -->
         {{-- <script src="assets/js/modernizr.min.js"></script> --}}
-
+        <link rel="stylesheet" type="text/css" href={{ asset('css/mystyle.css') }}>
     </head>
 
 

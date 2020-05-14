@@ -1,0 +1,13 @@
+input[type="submit"] {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    height: 3em;
+}
+input[type="email"] {
+    font-size: 24px;
+    height: 3em;
+    line-height: 3em;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+}
