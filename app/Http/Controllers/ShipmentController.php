@@ -42,7 +42,7 @@ class ShipmentController extends Controller
     {
         $pid = $request->pid;
         
-        $shipment = Shipment::where('pid', $pid)->first(); 
+        $shipment = Shipment::where('id', $pid)->first(); 
         // dd($shipment);
         return view('shipments.show', compact('shipment'));
     }
