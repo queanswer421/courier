@@ -25,27 +25,27 @@
                     </tr>
                     <tr>
                         <td>Wydanie przesyłki do doręczenia.</td>
-                        <td>{{$history->senderCity}}</td>
+                        <td>{{$history->h2}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
                         <td>Przyjęcie przesyłki w oddziale.</td>
-                        <td>{{$history->senderCity}}</td>
+                        <td>{{$history->h2}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
                         <td>Przyjęcie przesyłki w oddziale.</td>
-                        <td>{{$history->senderCity}}</td>
+                        <td>{{$history->h2}}</td>
                         <td>hahaha</td>
                     </tr>
                     <tr>
                         <td>Przesyłka odebrana przez Kuriera.</td>
-                        <td>{{$history->senderCity}}</td>
+                        <td>{{$history->h2}}</td>
                         <td>aa</td>
                     </tr>
                     <tr>
                         <td>Zarejestrowano dane przesyłki, przesyłka jeszcze nienadana.</td>
-                        <td>{{$history->senderCity}}</td>
+                        <td>{{$history->h2}}</td>
                         <td>hahaha</td>
                     </tr>
                 </table> 
