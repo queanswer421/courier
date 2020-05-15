@@ -31,3 +31,10 @@ Route::get('shipments/search', 'ShipmentController@search')->name('shipments.sea
 Route::get('shipments/results', 'ShipmentController@results')->name('shipments.results');
 Route::post('shipments', 'ShipmentController@store')->name('shipments.store');
 Route::get('shipments/{que}', 'ShipmentController@show')->name('shipments.show');
+
+//#####################################################
+Route::get('paczka', 'PackageController@index')->name('packages.index');
+Route::get('paczka/send', 'PackageController@send')->name('packages.send');
+Route::post('paczka/store', 'PackageController@store')->name('packages.store');
+Route::get('paczka/search', 'PackageController@search')->name('packages.search');
+Route::get('paczka/{pid}', 'PackageController@history')->name('packages.history');
